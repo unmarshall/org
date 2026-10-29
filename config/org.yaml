@@ -984,6 +984,12 @@ orgs:
         description: Network connector between the control plane (deployed in a Seed cluster)
           and a Shoot cluster superseding the vpn repository.
         has_projects: true
+      gardener-extension-nvidia-gpu-operator:
+        allow_merge_commit: false
+        allow_rebase_merge: false
+        description: Gardener extension to manage NVIDIA GPU Operator
+        has_projects: true
+        private: true
     teams:
       alpine-conntrack-maintainers:
         description: Maintainers of https://github.com/gardener/alpine-conntrack
@@ -2123,3 +2129,13 @@ orgs:
         - plkokanov
         - RadaBDimitrova
         privacy: closed
+      gardener-extension-nvidia-gpu-operator-maintainers:
+        description: Maintainers of Gardener extension for NVIDIA GPU Operator
+        maintainers:
+          - unmarshall
+          - shreyas-s-rao
+          - renormalize
+          - ashwin2k
+        privacy: closed
+        repos:
+          gardener-extension-nvidia-gpu-operator: admin
